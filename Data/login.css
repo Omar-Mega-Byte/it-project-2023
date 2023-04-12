@@ -1,0 +1,59 @@
+h1 {
+  text-align: center;
+}
+.new{
+  color: #190fa8;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover{
+  background-color: #555;
+  color: white;
+  border-radius:5px ;
+}
+form {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff00;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+button:hover {
+  background-color: #0f6f1a;
+  color: #ffffff;
+}
+
+li{
+  list-style: none;
+}
+li a {
+  display:block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #555;
+  color: white;
+}

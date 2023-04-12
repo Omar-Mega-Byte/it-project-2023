@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="Data/OIG.jpg">
+<title>Book Airplane Tickets</title>
+    <style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: black;
+}
+
+form {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px #010318;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image:url(Data/R.jpg);
+  opacity: 95%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin: 40px auto;
+  padding: 30px;
+  width: 500px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"],
+input[type="Date"],input[type="number"],input[list="Departure-Arrival"],
+input[list="Class"]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: #fff solid 4px;
+}
+
+button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #0f6f1a;
+  color: #ffffff;
+}
+</style>
+</head>
+<body>
+	<h1>Book Airplane Tickets</h1>
+	<form action="book.php" method="POST">
+		<label>Name:</label>
+		<input type="text" required name="name"><br><br>
+
+		<label>Email:</label>
+		<input type="email" required name="email"><br><br>
+
+		<label>Phone Number:</label>
+		<input type="tel" required name="phone"><br><br>
+
+    <label>Departure-Arrival</label>
+    <input list="Departure-Arrival" name="departure-arrival">
+    <datalist id="Departure-Arrival">
+        <option value="Helwan-London">
+        <option value="Cairo-Paris">
+        <option value="Giza-Rome">
+        <option value="Tanta-New York">
+        <option value="Fayoum-Manchester">
+    </datalist>
+
+    <label>Class</label>
+    <input list="Class" name="class">
+    <datalist id="Class">
+        <option value="Economical">
+        <option value="First-class">
+        <option value="Second-class">
+        <option value="Third-class">
+        <option value="Business">
+    </datalist>
+<br><br>
+
+<button type="submit">Book Now</button>
+    <br><br>
+	</form>
+  <br><br><br><br>
+</body>
+</html>

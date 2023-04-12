@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<link rel="stylesheet" href="Data/login.css">
+	<link rel="icon" href="Data/OIG.jpg">
+</head>
+<body>
+	<h1>the Login Form</h1>
+	<br><br><br><br><br>
+	<section>
+			<form method="POST" action="login.php">
+		<div class="container">
+			<h2>Login</h2>
+
+			<label for="email"><b>email</b></label>
+			<input type="email" placeholder="Enter email" name="email" required>
+
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required id="myInput">
+			<input type="checkbox" onclick="myFunction()">Show Password
+			<script>
+				function myFunction() {
+				var x = document.getElementById("myInput");
+				if (x.type === "password") {
+					x.type = "text";
+				} else {
+					x.type = "password";
+				}
+			}
+			</script>
+
+			<button type="submit">Login</button>
+			<br><br>
+			<h4>New Here? Register Now!</h4>
+			<a class="new" href="Register.html">Register</a>
+		</div>
+	</form>
+	<br>
+	</section>
+    <br><br><br><br><br>
+	<hr>
+	<footer>
+		<ul>
+			<br>
+			<li><a href="aboutUs.html">About Us</a></li>
+			<br>
+			<li><a href="ContactUs.html">Contact Us</a></li>
+			<br>
+		</ul>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Data/OIG.jpg">
+    <title>Contact Us</title>
+<style>
+input[type="text"], input[type="email"],input[type="textarea"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #696868;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0b7417;
+  color: #ffffff;
+}
+ul{
+  text-align: center;
+  margin-right: 15%;
+}
+h2{
+  text-align: center;
+}
+p{
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+body{
+  background-color: #f2f2f2;
+}
+li{
+  list-style: none;
+}
+.main{
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.info{
+  text-align:center;
+}
+</style>
+</head>
+<body>
+<section class="main">
+  <h1>Contact Us</h1>
+  <form method="post" action="ContactUs.php">
+    <div>
+      <input type="text" name="username" placeholder="Your Name" required>
+    </div>
+    <br>
+    <div>
+      <input type="email" name="email" placeholder="Your Email" required>
+    </div>
+    <br>
+    <div>
+      <input type="text" name="subject" placeholder="Subject" required>
+    </div>
+    <br>
+    <div>
+      <textarea rows="5" name="message" placeholder="Message"></textarea>
+    </div>
+    <br><br>
+    <button type="submit">Send Message</button>
+    <br><br>
+  </form>
+  <dev class="info">
+      <h2>Contact Information</h2>
+  <p>Feel free to contact us for any questions or inquiries.</p>
+  <ul>
+    <li>123 Helwan , Cairo , Egypt</li>
+    <li>012-345-678-90</li>
+    <li>BookMyFlight@gmail.com</li>
+  </ul>
+  </dev>
+
+</section>
+</body>
+</html>
